@@ -42,7 +42,8 @@ env/
 *.ckpt
 
 # Data (large files)
-data/
+data/cifar*
+data/oxf*
 results/
 scheduler_experiments/
 
