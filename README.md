@@ -6,9 +6,6 @@ An empirical study comparing **Learning Rate Free optimizers** (DOG, L-DOG, T-DO
 
 This project evaluates parameter-free optimization methods that eliminate the need for learning rate tuning—one of the most time-consuming aspects of deep learning. We compare these methods against traditional optimizers with multiple learning rate configurations to assess their practical effectiveness.
 
-### Research Question
-
-**Can learning rate free optimizers compete with carefully tuned baseline optimizers across different training scenarios?**
 
 ## Optimizers Under Test
 
