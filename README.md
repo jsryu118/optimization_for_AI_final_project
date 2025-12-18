@@ -67,9 +67,7 @@ new/
 │   └── optimizers/                   # Optimizer factory
 │       ├── factory.py               # Optimizer creation
 │       └── dog.py                   # DOG variants implementation
-│
-├── dog/                              # DOG library
-│
+││
 ├── experiments/                      # Experiment scripts
 │   ├── run_cifar10.sh               # Run CIFAR-10 experiments
 │   ├── run_oxford_pet.sh            # Run Oxford-Pet experiments
