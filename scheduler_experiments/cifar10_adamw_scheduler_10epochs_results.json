@@ -1,0 +1,100 @@
+{
+  "experiment_name": "cifar10_adamw_scheduler_10epochs",
+  "total_epochs": 10,
+  "train_losses": [
+    {
+      "epoch": 1,
+      "loss": 1.4736672101373023
+    },
+    {
+      "epoch": 2,
+      "loss": 1.0510194669054314
+    },
+    {
+      "epoch": 3,
+      "loss": 0.8929420623250983
+    },
+    {
+      "epoch": 4,
+      "loss": 0.7812960632145405
+    },
+    {
+      "epoch": 5,
+      "loss": 0.6931147914041172
+    },
+    {
+      "epoch": 6,
+      "loss": 0.626924722455442
+    },
+    {
+      "epoch": 7,
+      "loss": 0.5784215363250538
+    },
+    {
+      "epoch": 8,
+      "loss": 0.5320885857905854
+    },
+    {
+      "epoch": 9,
+      "loss": 0.5004002779552882
+    },
+    {
+      "epoch": 10,
+      "loss": 0.4794706626879898
+    }
+  ],
+  "val_accuracies": [
+    {
+      "epoch": 1,
+      "accuracy": 49.36
+    },
+    {
+      "epoch": 2,
+      "accuracy": 65.76
+    },
+    {
+      "epoch": 3,
+      "accuracy": 67.94
+    },
+    {
+      "epoch": 4,
+      "accuracy": 71.02
+    },
+    {
+      "epoch": 5,
+      "accuracy": 73.78
+    },
+    {
+      "epoch": 6,
+      "accuracy": 76.3
+    },
+    {
+      "epoch": 7,
+      "accuracy": 76.24
+    },
+    {
+      "epoch": 8,
+      "accuracy": 80.44
+    },
+    {
+      "epoch": 9,
+      "accuracy": 80.9
+    },
+    {
+      "epoch": 10,
+      "accuracy": 81.4
+    }
+  ],
+  "final_test_accuracy": 81.72,
+  "training_time": 51.26708364486694,
+  "checkpoint_results": [
+    {
+      "epoch": 10,
+      "train_loss": 0.4794706626879898,
+      "val_accuracy": 81.4,
+      "test_accuracy": 81.72,
+      "learning_rate": 2.4471741852423235e-05
+    }
+  ],
+  "used_scheduler": true
+}

@@ -1,0 +1,27 @@
+{
+  "10_epochs": {
+    "epochs": 10,
+    "test_accuracy": 81.72,
+    "training_time": 51.26708364486694
+  },
+  "20_epochs": {
+    "epochs": 20,
+    "test_accuracy": 85.43,
+    "training_time": 149.57458901405334
+  },
+  "30_epochs": {
+    "epochs": 30,
+    "test_accuracy": 87.0,
+    "training_time": 219.57664895057678
+  },
+  "40_epochs": {
+    "epochs": 40,
+    "test_accuracy": 87.29,
+    "training_time": 285.89561557769775
+  },
+  "50_epochs": {
+    "epochs": 50,
+    "test_accuracy": 87.97,
+    "training_time": 334.639621257782
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "experiment_name": "cifar10_adamw_scheduler_30epochs",
+  "total_epochs": 30,
+  "train_losses": [
+    {
+      "epoch": 1,
+      "loss": 1.4736672101373023
+    },
+    {
+      "epoch": 2,
+      "loss": 1.0515177857808091
+    },
+    {
+      "epoch": 3,
+      "loss": 0.896234147081321
+    },
+    {
+      "epoch": 4,
+      "loss": 0.7894960494542663
+    },
+    {
+      "epoch": 5,
+      "loss": 0.7056997923011129
+    },
+    {
+      "epoch": 6,
+      "loss": 0.6503129940141331
+    },
+    {
+      "epoch": 7,
+      "loss": 0.6117363291877237
+    },
+    {
+      "epoch": 8,
+      "loss": 0.5673990788954225
+    },
+    {
+      "epoch": 9,
+      "loss": 0.5361301264810291
+    },
+    {
+      "epoch": 10,
+      "loss": 0.5043673934414983
+    },
+    {
+      "epoch": 11,
+      "loss": 0.4799455516886982
+    },
+    {
+      "epoch": 12,
+      "loss": 0.4559385757893324
+    },
+    {
+      "epoch": 13,
+      "loss": 0.4327186243608594
+    },
+    {
+      "epoch": 14,
+      "loss": 0.4095626169476997
+    },
+    {
+      "epoch": 15,
+      "loss": 0.3926866958341138
+    },
+    {
+      "epoch": 16,
+      "loss": 0.37633318767290225
+    },
+    {
+      "epoch": 17,
+      "loss": 0.3597763782705773
+    },
+    {
+      "epoch": 18,
+      "loss": 0.34573658830909565
+    },
+    {
+      "epoch": 19,
+      "loss": 0.32479015284810553
+    },
+    {
+      "epoch": 20,
+      "loss": 0.30934547510167415
+    },
+    {
+      "epoch": 21,
+      "loss": 0.29654930872758006
+    },
+    {
+      "epoch": 22,
+      "loss": 0.2837667642796243
+    },
+    {
+      "epoch": 23,
+      "loss": 0.27492793065241794
+    },
+    {
+      "epoch": 24,
+      "loss": 0.26065590063279326
+    },
+    {
+      "epoch": 25,
+      "loss": 0.25372222980315035
+    },
+    {
+      "epoch": 26,
+      "loss": 0.2439117346763272
+    },
+    {
+      "epoch": 27,
+      "loss": 0.24262329235418953
+    },
+    {
+      "epoch": 28,
+      "loss": 0.2350535546217791
+    },
+    {
+      "epoch": 29,
+      "loss": 0.23472083762118762
+    },
+    {
+      "epoch": 30,
+      "loss": 0.23199545871466398
+    }
+  ],
+  "val_accuracies": [
+    {
+      "epoch": 1,
+      "accuracy": 49.36
+    },
+    {
+      "epoch": 2,
+      "accuracy": 66.0
+    },
+    {
+      "epoch": 3,
+      "accuracy": 66.46
+    },
+    {
+      "epoch": 4,
+      "accuracy": 70.92
+    },
+    {
+      "epoch": 5,
+      "accuracy": 72.26
+    },
+    {
+      "epoch": 6,
+      "accuracy": 74.7
+    },
+    {
+      "epoch": 7,
+      "accuracy": 73.42
+    },
+    {
+      "epoch": 8,
+      "accuracy": 77.44
+    },
+    {
+      "epoch": 9,
+      "accuracy": 77.28
+    },
+    {
+      "epoch": 10,
+      "accuracy": 79.22
+    },
+    {
+      "epoch": 11,
+      "accuracy": 80.24
+    },
+    {
+      "epoch": 12,
+      "accuracy": 81.48
+    },
+    {
+      "epoch": 13,
+      "accuracy": 83.14
+    },
+    {
+      "epoch": 14,
+      "accuracy": 83.24
+    },
+    {
+      "epoch": 15,
+      "accuracy": 83.24
+    },
+    {
+      "epoch": 16,
+      "accuracy": 84.36
+    },
+    {
+      "epoch": 17,
+      "accuracy": 83.56
+    },
+    {
+      "epoch": 18,
+      "accuracy": 84.36
+    },
+    {
+      "epoch": 19,
+      "accuracy": 85.42
+    },
+    {
+      "epoch": 20,
+      "accuracy": 85.3
+    },
+    {
+      "epoch": 21,
+      "accuracy": 86.06
+    },
+    {
+      "epoch": 22,
+      "accuracy": 86.36
+    },
+    {
+      "epoch": 23,
+      "accuracy": 86.28
+    },
+    {
+      "epoch": 24,
+      "accuracy": 86.56
+    },
+    {
+      "epoch": 25,
+      "accuracy": 86.76
+    },
+    {
+      "epoch": 26,
+      "accuracy": 86.6
+    },
+    {
+      "epoch": 27,
+      "accuracy": 86.74
+    },
+    {
+      "epoch": 28,
+      "accuracy": 86.66
+    },
+    {
+      "epoch": 29,
+      "accuracy": 87.06
+    },
+    {
+      "epoch": 30,
+      "accuracy": 87.02
+    }
+  ],
+  "final_test_accuracy": 87.0,
+  "training_time": 219.57664895057678,
+  "checkpoint_results": [
+    {
+      "epoch": 30,
+      "train_loss": 0.23199545871466398,
+      "val_accuracy": 87.02,
+      "test_accuracy": 87.0,
+      "learning_rate": 2.7390523158633003e-06
+    }
+  ],
+  "used_scheduler": true
+}
