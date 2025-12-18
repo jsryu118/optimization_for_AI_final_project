@@ -19,13 +19,12 @@ These optimizers automatically adapt their learning rates without manual tuning:
 - **T-DOG** (Transformed DOG) - Enhanced transformation variant
 - **Prodigy** - Adaptive learning rate method
 
-**Configuration**: All use `lr=1.0` (no tuning required)
 
 ### Baseline Optimizers
 Traditional optimizers requiring learning rate search:
-- **SGD** with Momentum: Tested with LR ∈ {0.1, 0.01, 0.001, 0.5, 1.0}
-- **Adam**: Tested with LR ∈ {0.001, 0.0001, 0.00001, 0.01, 0.005}
-- **AdamW**: Tested with LR ∈ {0.001, 0.0001, 0.00001, 0.01, 0.005}
+- **SGD** with Momentum: Tested with LR ∈ {1.0, 0.5, 0.1, 0.01, 0.001}
+- **Adam**: Tested with LR ∈ {0.01, 0.005, 0.001, 0.0001, 0.00001}
+- **AdamW**: Tested with LR ∈ {0.01, 0.005, 0.001, 0.0001, 0.00001}
 
 ## Experimental Tasks
 
@@ -58,7 +57,6 @@ new/
 │   ├── main.py                       # Main training entry point
 │   ├── config.py                     # Configuration management
 │   ├── trainer.py                    # Training loop
-│   ├── trainer_with_scheduler.py     # Training with LR scheduler
 │   ├── utils.py                      # Utility functions
 │   ├── data/                         # Data loaders
 │   │   ├── vision_data.py           # CIFAR-10, Oxford-Pet loaders
@@ -78,15 +76,11 @@ new/
 │   ├── run_sst2.sh                  # Run SST-2 experiments
 │   └── run_all_experiments.sh       # Run all experiments
 │
-├── run_scheduler_experiments.py      # Scheduler comparison (CIFAR-10)
-│
 ├── results/                          # Experiment results (JSON files)
-├── scheduler_experiments/            # Scheduler experiment results
 │
 └── analysis/                         # Analysis scripts
     ├── analyze_best_results.py      # Extract best results
     ├── analyze_lr_free_only.py      # LR-Free vs Baseline analysis
-    ├── analyze_scheduler_experiments.py # Scheduler analysis
     ├── plot_lr_free_only.py         # Generate comparison plots
     └── plot_final_report.py         # Generate detailed report plots
 ```
@@ -121,13 +115,9 @@ pip install -r requirements.txt
 
 **All commands should be executed from the project root directory.**
 
-### 1. Main Experiments (Baseline + LR-Free)
-
 Run experiments for all three tasks:
 
 ```bash
-cd /home/js/optimizer_project/new
-
 # CIFAR-10: 13 optimizer configurations
 bash experiments/run_cifar10.sh
 
@@ -197,16 +187,6 @@ python analysis/plot_final_report.py
 5. Best baseline vs LR-Free curves
 6. Training time comparison
 
-#### Scheduler Analysis
-
-```bash
-python analysis/analyze_scheduler_experiments.py
-```
-
-**Output**: `scheduler_experiments/` directory:
-- Scheduler performance comparison plots
-- Epoch-wise accuracy trends
-
 ## Expected Results
 
 ### CIFAR-10 (From Scratch Training)
@@ -233,29 +213,7 @@ python analysis/analyze_scheduler_experiments.py
    - New domains without established LR ranges
    - Rapid prototyping and experimentation
 
-## Hyperparameter Settings
-
-### Weight Decay
-- **SGD**: 0.01
-- **Adam**: 0.0 (standard practice)
-- **AdamW**: 0.01
-- **LR-Free (DOG variants, Prodigy)**: 0.0001
-
-### Other Parameters
-- **SGD Momentum**: 0.9
-- **DOG reps_rel**: 1e-6
-- **Random Seed**: 42 (for reproducibility)
-
 ## References
 
 - **DOG**: "Distance over Gradients: Fast Parameter-Free Online Convex Optimization" (Ivgi et al., 2023)
 - **Prodigy**: [prodigyopt library](https://github.com/konstmish/prodigy)
-- **ScheduleFree**: "The Road Less Scheduled" (Defazio et al., 2024)
-
-## Citation
-
-If you use this code in your research, please cite the original optimizer papers and this repository.
-
-## License
-
-Educational and research purposes only.
