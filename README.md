@@ -173,7 +173,6 @@ python analysis/plot_lr_free_only.py
 ```bash
 python analysis/plot_final_report.py
 ```
-
 **Output**: `final_report/` directory containing 18 plots (6 per task):
 1. SGD learning curves (all LRs)
 2. Test accuracy comparison (bar chart)
@@ -182,22 +181,7 @@ python analysis/plot_final_report.py
 5. Best baseline vs LR-Free curves
 6. Training time comparison
 
-## Expected Results
-
-### CIFAR-10 (From Scratch Training)
-- **Best LR-Free**: DOG - 88.65%
-- **Best Baseline**: Adam (LR=0.001) - 87.74%
-- **Winner**: LR-Free ✓
-
-### Oxford-Pet (Fine-tuning)
-- **Best LR-Free**: Prodigy - 90.13%
-- **Best Baseline**: SGD (LR=0.001) - 90.22%
-- **Winner**: Baseline (marginal difference)
-
-### SST-2 (Fine-tuning)
-- **Best LR-Free**: T-DOG - 90.60%
-- **Best Baseline**: AdamW (LR=0.001) - 90.37%
-- **Winner**: LR-Free ✓
+![alt text](fig/summary_lr_free_vs_baseline.png)
 
 ## Key Findings
 
