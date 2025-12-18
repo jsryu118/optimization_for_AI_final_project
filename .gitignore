@@ -43,6 +43,8 @@ env/
 
 # Data (large files)
 data/
+results/
+scheduler_experiments/
 
 # Generated plots and outputs
 final_plots/

@@ -144,24 +144,6 @@ bash experiments/run_all_experiments.sh
 **Results**: JSON files saved to `results/` directory with format:
 - `{task}_{optimizer}_lr{value}.json`
 
-### 2. Scheduler Experiments (CIFAR-10 only)
-
-Compare optimizer performance with Cosine Annealing LR scheduler:
-
-```bash
-# SGD with scheduler (10, 20, 30, 40, 50 epochs)
-python run_scheduler_experiments.py --optimizer sgd
-
-# Adam with scheduler
-python run_scheduler_experiments.py --optimizer adam
-
-# AdamW with scheduler
-python run_scheduler_experiments.py --optimizer adamw
-```
-
-**Note**: Each epoch configuration (10, 20, 30, 40, 50) is trained separately with scheduler T_max set to the corresponding epoch count.
-
-**Results**: JSON files saved to `scheduler_experiments/` directory.
 
 ## Analyzing Results
 
