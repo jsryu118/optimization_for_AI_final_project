@@ -50,7 +50,7 @@ scheduler_experiments/
 # Generated plots and outputs
 final_plots/
 final_report/
-*.png
+# *.png
 *.jpg
 *.pdf
 
